@@ -1,5 +1,5 @@
 {
-  "app": "./gradlew shadowJar && java -jar build/libs/cdk_source-1.0-SNAPSHOT-all.jar",
+  "app": "gradlew shadowJar && java -jar build/libs/cdk_source-1.0-SNAPSHOT-all.jar",
   "watch": {
     "include": [
       "**"

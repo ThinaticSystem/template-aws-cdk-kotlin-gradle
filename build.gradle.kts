@@ -3,7 +3,8 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
-group = "org.example"
+val packageName = "org.example"
+group = packageName
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -26,4 +27,10 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(21)
+}
+
+val jar by tasks.getting(Jar::class) {
+    manifest {
+        attributes["Main-Class"] = "$packageName.CdkAppKt"
+    }
 }
