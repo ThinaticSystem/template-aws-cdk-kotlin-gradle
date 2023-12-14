@@ -10,6 +10,13 @@ repositories {
 }
 
 dependencies {
+    // AWS CDK
+    val awsCdkVersion = "2.115.0"
+    implementation("software.amazon.awscdk:aws-cdk-lib:$awsCdkVersion")
+    val constructsVersion = "10.3.0"
+    implementation("software.constructs:constructs:$constructsVersion")
+
+    // Testing
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
