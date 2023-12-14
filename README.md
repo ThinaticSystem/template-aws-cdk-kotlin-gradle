@@ -1,3 +1,11 @@
+# AWS CDK template w/ Kotlin, Gradle
+
+[`cdk` command](https://www.npmjs.com/package/aws-cdk) must be available.\
+Follow the steps below:\
+$ `npm i -g aws-cdk`
+
+---
+
 # Welcome to your CDK Kotlin project!
 
 This is a blank project for CDK development with Kotlin.
