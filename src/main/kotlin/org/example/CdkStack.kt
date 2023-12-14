@@ -12,8 +12,8 @@ class CdkStack(scope: Construct, id: String, props: StackProps? = null) : Stack(
         // The code that defines your stack goes here
 
         // example resource
-        // val queue: Queue = Queue.Builder.create(this, "CdkQueue")
-        //     .visibilityTimeout(Duration.seconds(300))
-        //     .build()
+        //val queue = Queue.Builder.create(this, "CdkQueue")
+        //    .visibilityTimeout(Duration.seconds(300))
+        //    .build()
     }
 }
