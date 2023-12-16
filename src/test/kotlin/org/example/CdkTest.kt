@@ -5,7 +5,7 @@ package org.example
 //import software.amazon.awscdk.assertions.Template
 
 // example test. To run these tests, uncomment this file, along with the
-// example resource in java/src/main/kotlin/org/example/CdkStack.kt
+// example resource in src/main/kotlin/org/example/CdkStack.kt
 /*
 class CdkTest {
     @Test
