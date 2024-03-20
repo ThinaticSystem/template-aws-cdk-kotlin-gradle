@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm")
-    id("com.github.johnrengelman.shadow")
+    alias(libs.plugins.kotlinJvm)
+    alias(libs.plugins.shadow)
 }
 
 val packageName = "org.example"
@@ -13,10 +13,8 @@ repositories {
 
 dependencies {
     // AWS CDK
-    val awsCdkVersion: String by project
-    implementation("software.amazon.awscdk:aws-cdk-lib:$awsCdkVersion")
-    val constructsVersion: String by project
-    implementation("software.constructs:constructs:$constructsVersion")
+    implementation(libs.awsCdk)
+    implementation(libs.awsConstructs)
 
     // Testing
     testImplementation("org.jetbrains.kotlin:kotlin-test")
